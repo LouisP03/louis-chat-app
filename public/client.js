@@ -24,6 +24,15 @@ document.getElementById('enterName').addEventListener('input', () => {
     chosenName = name;
 });
 
+//this event handler detects when enter is pressed and presses send button
+var messageInput = document.getElementById('messageEntry');
+messageInput.addEventListener('keyup', (event) => {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById('messageSendButton').click();
+    }
+})
+
 function sendMessage() {
     //retrieve message that is entered upon function call
     var message = document.getElementById('messageEntry').value;
