@@ -1,0 +1,53 @@
+#main {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#container {
+  position: absolute;
+  width: 40%;
+  background: lightgray;
+  height: 90%;
+  left: 0px;
+}
+
+.chat-dump {
+  position: absolute;
+  height: 80%;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+  left: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  word-wrap: break-word;
+  padding: 0px;
+  top: -6px;
+  background: white;
+}
+
+#nameContainer {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+#enterName {
+  position: absolute;
+  width: 100%;
+}
+
+#messageEntry {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+
+#messageSendButton {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 30px;
+}
