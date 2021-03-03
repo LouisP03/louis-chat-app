@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">     
+        <title>
+            Chat
+        </title>
+        <script src="libraries/socket.io.js"></script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="container">
+                <div id="nameContainer">
+                    <input type="text" autocomplete="off" id="enterName" name="enterName" placeholder="Enter your name"></input>
+                </div>
+                <div class="chat-dump">
+
+                </div>
+                <div id="newMessageContainer">
+                    <input type="text" autocomplete="off" placeholder="Enter Message" id="messageEntry" name="messageEntry"></input>
+                    <button onclick="sendMessage();" id="messageSendButton">Send</button>
+                </div>
+            </div>
+        </div>
+        <script src="client.js" type="text/javascript"></script>
+    </body>
+</html>
